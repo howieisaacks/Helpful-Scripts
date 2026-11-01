@@ -105,4 +105,3 @@ main "$@"
 
 # TEST A FUNCTION
 # -----------------------------------
-#change_password_dialog
