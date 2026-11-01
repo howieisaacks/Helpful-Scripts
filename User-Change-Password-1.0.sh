@@ -32,7 +32,7 @@ current_uid=$(id -u "$current_user")
 open_user_account() {
     local settings_url="x-apple.systempreferences:com.apple.Users-Groups-Settings.extension?showinfo*user:${current_user}"
     
-    if [[ -z "$current_user" || "$current_user" == "root" || "$current_user" == "loginwindow" || "$current_user" == "jamfsrvc" || "$current_user" == "wksadmin" ]]; then
+    if [[ -z "$current_user" || "$current_user" == "root" || "$current_user" == "loginwindow" ]]; then
         echo "No valid logged-in user was detected."
         exit 0
     fi
