@@ -78,9 +78,9 @@ erase_dialog() {
 	--icon "https://raw.github.com/howieisaacks/icons/main/Sad-Mac.png" \
 	--iconsize "200" \
 	--appearance "light" \
-	--button1text "OK" \
-	--button1disabled \
-	--timer "20"
+	--button1text "none" \
+	--timer "10" \
+	--hidetimerbar
 	
 	erase_result="$?"
 }
@@ -100,7 +100,11 @@ canceled_dialog() {
 	--iconsize "200" \
 	--appearance "light" \
 	--button1text "OK" \
-	--timer "20"
+	--button1symbol "face.smiling.inverse,color=yellow" \
+	--buttontextsize "18" \
+	--buttonsize "large" \
+	--hidetimerbar \
+	--timer "10"
 	
 	cancel_result="$?"
 }
@@ -158,4 +162,8 @@ main() {
 
 # RUN ALL FUNCTIONS
 # -----------------------------------
-main "$@"   
+main "$@"
+
+
+# TEST A FUNCTION
+# -----------------------------------
