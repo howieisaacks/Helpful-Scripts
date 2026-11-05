@@ -16,7 +16,6 @@ INFO
 # GLOBAL VARIABLES
 #---------------------------------
 currentUser=$(/usr/bin/stat -f "%Su" /dev/console)
-log_file="/private/var/log/${script_name:r}.log"
 dialog_bin="/usr/local/bin/dialog"
 dialog_command_file="/var/tmp/dialog.log"
 
