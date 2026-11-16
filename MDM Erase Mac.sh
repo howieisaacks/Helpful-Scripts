@@ -74,7 +74,7 @@ erase_dialog() {
 	--bannerheight "50" \
 	--bannertitle "Erasing this Mac..." \
 	--titlefont "colour=white,size=24,weight=regular,shadow=1" \
-	--message "This Mac will now be erased.<br><br> **You may need to ethernet to activate macOS.**<br><br>Erase will begin in a few seconds." \
+	--message "This Mac will now be erased.<br><br> **You may need to connect to ethernet to activate macOS.**<br><br>Erase will begin in a few seconds." \
 	--icon "https://raw.github.com/howieisaacks/icons/main/Sad-Mac.png" \
 	--iconsize "200" \
 	--appearance "light" \
